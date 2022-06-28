@@ -138,7 +138,7 @@ footer{
 
 .below-fotter{
     padding: 0 3em;
-    width: 100vw;
+    width: 100%;
     line-height: 3.5;
     background-color: rgba(31, 31, 31, 0.99);
 }
