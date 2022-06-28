@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="nav-l">
+                <p class="nav-title">VIKRAM NEGI</p>
+            </div>
+            <div class="nav-r">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="">OTHER PROJECTS</a></li>
+                    <li><a href="https://github.com/vikramnegiofficial/" target="_blank">GITHUB</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="marks-pre" id="home">Students Marks Predictor</div>
+    <div class="pre-container">
+        <div class="prediction-box">
+                <form action="{{url_for('predict')}}" method="post" class="pre-form">
+                    <label for="study_hours" class="study-hour-label">Number of studied hours</label><br/>
+                    <input type="text" name="study_hours" placeholder="Study hours"
+                        required="required" id="pre-input">
+                    <br>
+
+                    <br>
+                    <div class="button_cont">
+                        <a class="button_css"
+                            href="" target="_blank" rel="nofollow noopener">
+                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict
+                                    Marks</button></a>
+                    </div>
+                </form>
+            <div class="pre-output">
+                    <h2>{{ prediction_text }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-sec">
+            <div class="fot-sec-l">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                   
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                 </ul>
+            </div>
+
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> &nbsp;&nbsp;HOME</a></li>
+                    <li><a href=""><i class="fas fa-home"></i> &nbsp;&nbsp;OTHER PROJECTS</a></li>
+                    <li><a href="https://github.com/vikramnegiofficial/" target="_blank"><i class="fa-brands fa-linkedin"></i> &nbsp;&nbsp;GITHUB</a></li>
+                </ul>
+                <button type="button" class="btn know-more-btn">Know more</button>
+            </div>
+
+            <iframe src="https://nutrica.herokuapp.com/" class="iframe-cont" title="Github"></iframe>
+        </div>
+            <div class="below-fotter">
+                <p>Copyright &copy; 2021 <a href="https://github.com/vikramnegiofficial/">Vikram negi</a> || All rights reserved</p>
+            </div>
+    </footer>
+    
+</body>
+
+</html>
