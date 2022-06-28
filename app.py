@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 import joblib
 
 app = Flask(__name__)
-
+# this
 model = joblib.load("students_marks_predictor.pkl")
 
 df = pd.DataFrame()
