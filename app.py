@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
 import joblib
+import os
 
 app = Flask(__name__)
 # this
@@ -42,7 +43,7 @@ def predict():
 
     return render_template('index.html', prediction_text='You will get {}% marks, when you do study {} hours per day '.format(output,(features_value[0])))
 
-
+port = int(os.environ.get('PORT', 5000))
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=port, debug=True)
     
