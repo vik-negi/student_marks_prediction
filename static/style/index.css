@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar{
+    height: 65px;
+    padding: 0 3em;
+    background-color: rgba(255,255,255,0.88);
+    box-shadow: rgba(0,0,0,0.4) 2px 1px 3px;
+}
+.navbar-container{
+    /* line-height: ; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-r ul{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    line-height: 4.2;
+}
+.nav-r ul li, .bottom-nav ul li{
+    list-style: none;
+}
+.nav-r ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(31, 31, 31, 0.99);
+}
+.nav-r ul li a:hover{
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(31, 31, 31, 1);
+}
+
+.pre-container{
+    margin-top: 50px;
+}
+.pre-container{
+    display: flex;
+    justify-content: center;
+}
+
+.prediction-box{
+    flex-direction: column;
+    padding: 2em 2em;
+    width: 550px;
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 12px ;
+    border-radius: 5px;
+    background-color: rgba(31, 31, 31, 0.99);
+}
+.study-hour-label{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+.prediction-box .pre-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#pre-input{
+    padding-left: 12px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+}
+#pre-input::placeholder{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#pre-input:focus{
+    outline: none;
+    border: none;
+}
+.btn{
+    padding: 8px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #e1e1e1;
+    
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(153, 99, 204, 0.5);
+}
+.btn:hover{
+    background-color: rgba(124, 75, 170, 0.5);
+    cursor: pointer;
+}
+
+.marks-pre{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.pre-output{
+    color: #e1e1e1;
+    font-size: 12px;
+}
+
+/* Footer */
+footer{
+    margin-top: 150px;
+    background-color: rgba(31, 31, 31, 0.99);
+}
+.footer-sec{
+    display: flex;
+    align-items: center;
+    padding: 1em 3rem;
+    justify-content: space-between;
+}
+.iframe-cont{
+    height: 150px;
+    width: 810px;
+}
+.socials li{
+    list-style: none;
+}
+.socials li a{
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 2;
+    color: #d1d1d1;
+}
+.socials li a:hover{
+    color: #f1f1f1;
+    text-shadow: rgba(255,255,255,0.5) 5px 5px 25px;
+}
+
+.below-fotter{
+    padding: 0 3em;
+    width: 100vw;
+    line-height: 3.5;
+    background-color: rgba(31, 31, 31, 0.99);
+}
+.below-fotter p{
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+}
+.below-fotter p a{
+    text-decoration: none;
+    color: #e1e1e1;
+}
+.below-fotter p a:hover{
+    color: #d1d1d1;
+}
+.bottom-nav ul li a{
+    line-height: 2;
+    color: #e1e1e1;
+    text-decoration: none;
+
+}
+.know-more-btn{
+    margin-top: 15px;
+    margin-bottom: auto;
+    font-size: 15px;
+}
